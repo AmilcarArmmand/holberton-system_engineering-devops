@@ -1,19 +1,11 @@
 # 0x04. Loops, conditions and parsing
 
-## Resources:books:
-Read or watch:
-* [Loops sample](https://intranet.hbtn.io/rltoken/fRCmr2B_Ne-rQdFZdfUDcA)
-* [Variable assignment and arithmetic](https://intranet.hbtn.io/rltoken/o8mucWW2XddN4MHiHSArkA)
-* [Comparison operators](https://intranet.hbtn.io/rltoken/jN0bfG-Qpkg3aYJM-n3LHw)
-* [File test operators](https://intranet.hbtn.io/rltoken/mYWUvI1VFqR_KWNWZngq7Q)
-* [Make your scripts portable](https://intranet.hbtn.io/rltoken/Dyrnap2UC-LrzrmCOJRx8A)
-
 ---
-## Learning Objectives:bulb:
-What you should learn from this project:
+
+## Learning Objectives :bulb:
 
 * How to create SSH keys
-* What is the advantage of using  #!/usr/bin/env bash over #!/bin/bash
+* What is the advantage of using  `#!/usr/bin/env bash` over `#!/bin/bash`
 * How to use while, until and for loops
 * How to use if, else, elif and case condition statements
 * How to use the cut command
