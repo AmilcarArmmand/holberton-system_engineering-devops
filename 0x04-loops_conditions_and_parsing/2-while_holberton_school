@@ -4,7 +4,7 @@
 TEXT="Holberton School"
 i="0"
 
-while [ $i -lt 10 ]
+while (( i<10 ))
 do echo "$TEXT"
 i=$(( i + 1 ))
 done
