@@ -16,9 +16,9 @@ do
     if (((( i % 15 )) == "0" )); then
 	echo "$TEXT1"
     elif (((( i % 5 )) == "0" )); then
-	echo "$TEXT2"
-    elif (((( i % 3 )) == "0" )); then
 	echo "$TEXT3"
+    elif (((( i % 3 )) == "0" )); then
+	echo "$TEXT2"
     else
 	echo "$i"
     fi
