@@ -3,9 +3,9 @@
 
 TEXT="Hour"
 h="0"
-m="0"
+m="1"
 
-while (( h<13 ))
+while (( h<12 ))
 do
     echo "$TEXT: $h"
     while (( m<60 ))
@@ -13,6 +13,6 @@ do
 	echo "$m"
 	m=$(( m + 1 ))
     done
-    m="0"
+    m="1"
 h=$(( h + 1 ))
 done
