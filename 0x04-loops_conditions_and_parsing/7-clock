@@ -5,7 +5,7 @@ TEXT="Hour"
 h="0"
 m="1"
 
-while (( h<12 ))
+while (( h<13 ))
 do
     echo "$TEXT: $h"
     while (( m<60 ))
