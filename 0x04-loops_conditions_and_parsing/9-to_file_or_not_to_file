@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+# Bash script that evaluates holbertonschool file
 
 FILE=holbertonschool
 
