@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Bash script that displays the contents of the /etc/passwd file
+
+cut -d":" -f1,3,6 < /etc/passwd | while read LINE; do
+    echo "$LINE"
+done
