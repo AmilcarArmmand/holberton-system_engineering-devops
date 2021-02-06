@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Bash script that loops from 1 to 10 and:
+# displays bad luck for the 4th loop iteration
+# displays good luck for the 8th loop iteration
+# displays Holberton School for the other iterations
+
+TEXT="Holberton School"
+TEXT1="bad luck"
+TEXT2="good luck"
+i="0"
+
+while (( i<10 ))
+do
+    if [ $i -eq 3 ]; then
+	  echo "$TEXT1"
+      elif [ $i -eq 7 ]; then
+	  echo "$TEXT2"
+      else
+	  echo "$TEXT"
+      fi
+    i=$(( i + 1 ))
+done
