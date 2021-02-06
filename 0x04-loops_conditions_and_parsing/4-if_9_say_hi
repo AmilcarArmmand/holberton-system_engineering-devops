@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script displays "Holberton School" 10 times using a while loop.
+
+TEXT="Holberton School"
+TEXT1="Hi"
+i="0"
+
+while (( i<10 ))
+do echo "$TEXT"
+   if [ $i -eq 8 ]; then
+       echo "$TEXT1"
+       fi
+i=$(( i + 1 ))
+done
