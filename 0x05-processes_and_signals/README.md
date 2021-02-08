@@ -7,7 +7,8 @@ Read or watch:
 * [Linux signal](https://intranet.hbtn.io/rltoken/SojW4zvL8j1yaoa7_NM6rA)
 
 ---
-## Learning Objectives:bulb:
+
+## Learning Objectives :bulb:
 What you should learn from this project:
 
 * What is a PID
@@ -60,11 +61,11 @@ What you should learn from this project:
 
 
 ### [10. Manage my process](./101-manage_my_process)
-* 
+* Bash (init) script `101-manage_my_process` that manages `manage_my_process`
 
 
 ### [11. Zombie](./102-zombie.c)
-* 
+* Write a C program that creates 5 zombie processes.
 
 
 ### [12. Screencast](./103-screencast_unix_signal)
