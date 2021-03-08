@@ -8,14 +8,17 @@ What you should learn from this project:
 * You must be able to draw a diagram covering the web stack you built with the sysadmin/devops track projects
 * You must be able to explain what each component is doing
 * You must be able to explain system redundancy
-* Know all the mentioned acronyms: LAMP, SPOF, QPS
+* Know all the mentioned acronyms:
+	* LAMP - Linux OS, Apache web server, MySQL database, and PHP application server
+	* SPOF - Single Point of failure
+	* QPS - Query per second
 
 ## Project tasks
 
 ---
 
 ### [0. Simple web stack](./0-simple_web_stack)
-* On a whiteboard, desogn a single server with a LAMP stack that includes
+* On a whiteboard, design a single server with a LAMP stack that includes
   * 1 server
   * 1 web server (Nginx)
   * 1 application server
