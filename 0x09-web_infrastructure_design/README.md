@@ -27,7 +27,7 @@ What you should learn from this project:
   * 1 domain name `foobar.com` configured with a `www` record that points to server IP 8.8.8.8
 
 ### [1. Distributed web infrastructure](./1-distributed_web_infrastructure)
-* On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com.
+* On a whiteboard, design a three server web infrastructure that hosts the website `www.foobar.com`.
   * 3 servers
   * 2 web servers (Nginx)
   * 2 application servers
@@ -37,7 +37,7 @@ What you should learn from this project:
   * 1 domain name `foobar.com` configured with a `www` record that points to server IP 8.8.8.8
 
 ### [2. Secured and monitored web infrastructure](./2-secured_and_monitored_web_infrastructure)
-* On a whiteboard, design a three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
+* On a whiteboard, design a three server web infrastructure that hosts the website `www.foobar.com`, it must be secured, serve encrypted traffic, and be monitored.
   * 3 servers
   * 2 web servers (Nginx)
   * 2 application servers
@@ -46,7 +46,7 @@ What you should learn from this project:
   * 2 database (MySQL)
   * 1 domain name `foobar.com` configured with a `www` record that points to server IP 8.8.8.8
   * 3 firewalls
-  * 1 SSL certificate to serve www.foobar.com over HTTPS
+  * 1 SSL certificate to serve `www.foobar.com` over HTTPS
   * 3 monitoring clients (data collector for Sumologic or other monitoring services
 
 ### [3. Scale up](./3-scale_up)
@@ -59,7 +59,7 @@ What you should learn from this project:
   * 2 database (MySQL)
   * 1 domain name `foobar.com` configured with a `www` record that points to server IP 8.8.8.8
   * 3 firewalls
-  * 1 SSL certificate to serve www.foobar.com over HTTPS
+  * 1 SSL certificate to serve `www.foobar.com` over HTTPS
   * 3 monitoring clients (data collector for Sumologic or other monitoring services
   * Split componenets with their own server
 
