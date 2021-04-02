@@ -2,10 +2,12 @@
 
 ---
 
-## Learning Objectives:bulb:
+## Learning Objectives :bulb:
 
 Getting started with configuration management.
 
+
+## Project tasks :wrench:
 ---
 
 ### [0. Create a file](./0-create_a_file.pp)
@@ -22,4 +24,4 @@ Getting started with configuration management.
 ---
 
 ## Author
-* **Amilcar Armmand** - [AmilcarArmmand](https://github.com/AmilcarArmmand)
+* **Amilcar Armmand** - [Github](https://github.com/AmilcarArmmand)
