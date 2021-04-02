@@ -11,15 +11,20 @@
 
 
 ### [2. Client configuration file](./2-ssh_config)
-* Your Ubuntu Vagrant machine has an SSH configuration file for the local SSH client, let’s configure it to our needs so that you can connect to a server without typing a password.
-Share your SSH client configuration in your answer file.
+* Your SSH client configuration must be configured to use the private key ~/.ssh/holberton.
+* Your SSH client configuration must be configured to refuse to authenticate using a password.
+
 
 
 ### [3. Let me in!](./4-puppet_ssh_config.pp)
-* Now that you have successfully connected to your server, we would also like to join the party.
+* Add the SSH public key below to your server so that we can connect using the ubuntu user.
 
+
+### [4. Client configuration file with Puppet](./100-puppet_ssh_config.pp)
+* Your SSH client configuration must be configured to use the private key ~/.ssh/holberton.
+* Your SSH client configuration must be configured to refuse to authenticate using a password.
 
 ---
 
-## Author
-* **Amilcar Armmand** - [AmilcarArmmand](https://github.com/AmilcarArmmand)
+## Author :black_nib:
+* **Amilcar Armmand** - [Github](https://github.com/AmilcarArmmand)
