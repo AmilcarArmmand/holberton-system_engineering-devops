@@ -15,7 +15,7 @@
 * Your SSH client configuration must be configured to refuse to authenticate using a password.
 
 
-### [3. Let me in!]
+### 3. Let me in:
 * Added the SSH public key for the checker to server so it can connect using the ubuntu user.
 
 
