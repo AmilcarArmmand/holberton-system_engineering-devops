@@ -15,9 +15,8 @@
 * Your SSH client configuration must be configured to refuse to authenticate using a password.
 
 
-
-### [3. Let me in!](./4-puppet_ssh_config.pp)
-* Add the SSH public key below to your server so that we can connect using the ubuntu user.
+### [3. Let me in!]
+* Added the SSH public key for the checker to server so it can connect using the ubuntu user.
 
 
 ### [4. Client configuration file with Puppet](./100-puppet_ssh_config.pp)
