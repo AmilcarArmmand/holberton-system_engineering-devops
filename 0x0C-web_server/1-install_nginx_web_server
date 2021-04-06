@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Install nginx on an Ubuntu 16.04 LTS server
+
+# Update package list
+sudo apt-get -y update >/dev/null 2>&1
+
+# Install nginx and restart service
+sudo apt-get -y install nginx >/dev/null 2>&1
+sudo service nginx restart
+
+# Change doc_root contents
+echo "Holberton School" > index.nginx-debian.html
+sudo mv index.nginx-debian.html /var/www/html/
