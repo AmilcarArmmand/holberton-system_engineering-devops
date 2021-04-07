@@ -14,4 +14,4 @@ sudo mv index.nginx-debian.html /var/www/html/
 
 # Redirect /redirect_me to another page
 new_string="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
-sudo sed -i "42i this_line_is_new" /etc/nginx/sites-available/default
+sudo sed -i "42i ${new_string}" /etc/nginx/sites-available/default
