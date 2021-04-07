@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Install nginx on an Ubuntu 16.04 LTS server
+
+# Update package list
+sudo apt-get -y update >/dev/null 2>&1
+
+# Install nginx and restart service
+sudo apt-get -y install nginx >/dev/null 2>&1
+
+# Change doc_root contents
+echo "Holberton School" > index.nginx-debian.html
+sudo mv index.nginx-debian.html /var/www/html/
+
+# Redirect /redirect_me to another page
+new_string="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
+sudo sed -i "42i ${new_string}" /etc/nginx/sites-available/default
+
+# New 404 error page
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+new_string1="\\\terror_page 404 /404.html;\n\tlocation = /404.html {\n\t\troot /var/www/html;\n\t\tinternal;\n\t}"
+sudo sed -i "44i $new_string1" /etc/nginx/sites-available/default
+
+sudo service nginx restart
