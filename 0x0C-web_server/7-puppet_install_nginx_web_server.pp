@@ -13,10 +13,6 @@ package { 'nginx':
   ensure => present,
 }
 
-file { [ '/etc', '/etc/nginx', '/etc/nginx/sites-available', '/var', '/var/www', '/var/www/html', '/var/www/err', '/var/www/err/html' ]:
-  ensure => 'directory',
-}
-
 file { 'index':
   ensure  => present,
   path    => '/var/www/html/index.html',
