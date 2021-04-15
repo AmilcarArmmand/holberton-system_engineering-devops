@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Script that debugs nginx installation on a container on port 80
+# curl 0:80; netstat -lpnd; curl 0:8080; diff /sites-available/ /sites-enabled/
+sudo rm /etc/nginx/sites-enabled/default
+sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
