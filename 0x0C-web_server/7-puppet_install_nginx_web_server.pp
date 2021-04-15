@@ -32,5 +32,5 @@ file { 'nginx-config':
 }
 
 exec { 'restart nginx':
-  command => '/usr/sbin/service restart nginx',
+  command => '/usr/sbin/service nginx restart',
 }
