@@ -2,6 +2,6 @@
 # script that installs ufw firewall
 sudo apt-get -y install ufw
 sudo ufw allow ssh
-sudo ufw allow 'Nginx Full'
-sudo service nginx restart
-sudo reboot
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw enable
