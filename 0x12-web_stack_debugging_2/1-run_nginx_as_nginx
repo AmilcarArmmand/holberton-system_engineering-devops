@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# script that debugs the container so that nginx runs as nginx user
+# netstat -lpdn
+pkill -f apache2
+
+# dpkg -l | grep nginx
+# add `user nginx;` to `/etc/nginx/nginx.conf`
+chown nginx:nginx /etc/nginx/nginx.conf
+
+# change owner and permission on docroot directories recurisely to nginx
+sudo chmod 700 /etc/nginx/nginx.conf
+
+# replace 80 woth 8080 in sites-available or nginx.conf
+sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
+
+# check current ports and processes
+# sudo -u nginx nginx
+sudo -u nginx service nginx start
+# ps auxff | grep ngin[x]
