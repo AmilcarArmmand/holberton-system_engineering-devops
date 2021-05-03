@@ -20,6 +20,6 @@ if __name__ == "__main__":
             completed_tasks.append(item.get("title"))
     # EMPLOYEE_NAME NUMBER_OF_DONE_TASKS / TOTAL_NUMBER_OF_TASKS
     print("Employee {} is done with tasks({}/{}):".
-          format(user.get("name"), len(completed_tasks), len(todos)))
-    for item in todos:
-        print("\t {}".format(item.get("title")))
+          format(user.get("name"), len(completed_tasks), len(todo)))
+    for item in completed_tasks:
+        print("\t {}".format(item))
