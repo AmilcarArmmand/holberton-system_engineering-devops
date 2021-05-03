@@ -21,5 +21,5 @@ if __name__ == "__main__":
     # EMPLOYEE_NAME NUMBER_OF_DONE_TASKS / TOTAL_NUMBER_OF_TASKS
     print("Employee {} is done with tasks({}/{}):".
           format(user.get("name"), len(completed_tasks), len(todo)))
-    for item in completed_tasks:
-        print("\t {}".format(item))
+    # print list of completed tasks
+    print("\n".join("\t {}".format(item) for item in completed_tasks))
