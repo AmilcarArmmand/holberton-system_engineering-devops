@@ -12,14 +12,18 @@ if __name__ == "__main__":
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}".
                         format(user_id)).json()
     # request for todos data
-    todo = requests.get("https://jsonplaceholder.typicode.com/todos?userID={}".
-                        format(user_id)).json()
+    todo = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}".
+                         format(user_id)).json()
     completed_tasks = []
-    for item in todo:
-        if item.get("completed") is True:
-            completed_tasks.append(item.get("title"))
-    # EMPLOYEE_NAME NUMBER_OF_DONE_TASKS / TOTAL_NUMBER_OF_TASKS
+    for task in todo:
+        if task.get("completed") is True:
+            completed_tasks.append(task.get("title"))
+
+#    task = [task for task in todo if task.get("completed")]
     print("Employee {} is done with tasks({}/{}):".
           format(user.get("name"), len(completed_tasks), len(todo)))
-    # print list of completed tasks
-    print("\n".join("\t {}".format(item) for item in completed_tasks))
+
+    for task in todo:
+        print("\t {}".format(task.get("title")))
+
+    # print("\n".join("\t {}".format(item) for item in completed_tasks))
