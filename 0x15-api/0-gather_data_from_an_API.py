@@ -19,11 +19,9 @@ if __name__ == "__main__":
         if task.get("completed") is True:
             completed_tasks.append(task.get("title"))
 
-#    task = [task for task in todo if task.get("completed")]
     print("Employee {} is done with tasks({}/{}):".
           format(user.get("name"), len(completed_tasks), len(todo)))
 
-    for task in todo:
-        print("\t {}".format(task.get("title")))
-
-    # print("\n".join("\t {}".format(item) for item in completed_tasks))
+    for task in completed_tasks:
+        print("\t {}".format(task))
+#    print("\n".join("\t {}".format(task) for task in completed_tasks))
