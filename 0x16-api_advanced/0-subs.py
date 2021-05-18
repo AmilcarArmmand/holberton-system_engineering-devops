@@ -9,7 +9,7 @@ def number_of_subscribers(subreddit):
     """gets the number of subscribers"""
     try:
         subs = get("https://www.reddit.com/r/{}/about.json".format(subreddit),
-               headers={'User-agent': 'my user agent'}, allow_redirects=False).json()
-        return subs.get('data').get('subscribers')
+               headers={'User-agent': 'Mozilla/5.0'}, allow_redirects=False).json()
+        return subs.get('data').get('subscribers') if not None else 0
     except:
         return 0
